@@ -2,7 +2,7 @@
 
 Special keys are JSON keys that are only used in certain, specific, unique locations in the `.json` files.
 So far only two keys are implemented in the MC:PE JSON Format:
-- [`namespace`](Types#namespace)
+- [`namespace`](json_key_namespace#Namespace)
 - [`ui_defs`](#ui-defs)
 
 ## ui_defs:
