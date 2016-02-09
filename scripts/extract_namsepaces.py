@@ -24,11 +24,11 @@ assets = utils.setup_args('Utility script to extract namespaces from MC: PE/W10/
 namespaces = list()
 
 print('\nAnalyzing \'_ui_defs.json\'...\n')
-ui_defs = json.loads(utils.get_clean_json(assets + 'ui/_ui_defs.json'))
+ui_defs = json.loads(utils.get_clean_json(assets + '/ui/_ui_defs.json'))
 
 for ui_file in ui_defs['ui_defs']:
 	print('Analyzing \'{}\'...'.format(ui_file))
-	ui_json = json.loads(utils.get_clean_json(assets + ui_file))
+	ui_json = json.loads(utils.get_clean_json(assets + '/' + ui_file))
 	namespaces.append(ui_json['namespace'])
 
 print('\nRemoving duplicates...')
